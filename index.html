@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reformat Copy Paste Items</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="m-4">
+    <h1 class="text-4xl font-bold text-center">Reformat Copy Paste Items</h1>
+    <textarea
+      class="w-full my-4 p-2 border border-gray-300 rounded"
+      name="items"
+      id="text_area"
+      cols="30"
+      rows="10"
+      value=""
+      placeholder="Paste your items here"
+    ></textarea>
+    <div class="flex items-center my-4">
+      <label for="separator" class="mr-2"> Separator: </label>
+      <input
+        type="text"
+        class="border w-full border-gray-300 rounded p-2"
+        id="separator"
+        placeholder="Enter separator"
+        value=""
+      />
+    </div>
+    <button
+      class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      id="reformat_button"
+      type="button"
+    >
+      Submit
+    </button>
+    <script src="app.js"></script>
+  </body>
+</html>
